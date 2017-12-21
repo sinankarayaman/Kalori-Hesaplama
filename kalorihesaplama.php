@@ -28,6 +28,9 @@
 
 
 			<?php
+			/*
+				Sinan KARAYAMAN
+			*/
 
 				if(isset($_POST['Yas']) && isset($_POST['Kilo']) && isset($_POST['Boy'])){
 
@@ -42,7 +45,7 @@
 						case 'Female':
 							$cinsiyet= 655 + (9.6 * $Kilo ) + (1.8 * $Boy) - (4.7 * $Yas);
 							echo "<p>Tahmini günlük metabolizma hızınız $cinsiyet </p>";
-							echo "<p>This means that you need rouhgly $cinsiyet calories a day to maintain your current Kilo.</p>";
+							echo "<p>Bu şu anki kilonuzu korumak için günde kabaca $cinsiyet kaloriye ihtiyacınız olduğu anlamına gelir.</p>";
 							break;
 
 						case 'Male':
